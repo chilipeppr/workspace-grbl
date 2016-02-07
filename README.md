@@ -1,9 +1,9 @@
 # com-chilipeppr-workspace-grbl
-This is a workspace for ChiliPeppr's Hardware Fiddle. It is geared towards CNC machines using TinyG.
+This is a workspace for ChiliPeppr's Hardware Fiddle. It is geared towards CNC machines using GRBL.
 
 
 
-## ChiliPeppr Workspace / Grbl
+## ChiliPeppr Workspace / GRBL
 
 All ChiliPeppr workspaces/widgets/elements are defined using cpdefine() which is a method
 that mimics require.js. Each defined object must have a unique ID so it does
@@ -12,8 +12,8 @@ not conflict with other ChiliPeppr objects.
 | Item                  | Value           |
 | -------------         | ------------- | 
 | ID                    | com-chilipeppr-workspace-grbl |
-| Name                  | Workspace / Grbl |
-| Description           | This is a workspace for ChiliPeppr's Hardware Fiddle. It is geared towards CNC machines using TinyG. |
+| Name                  | Workspace / GRBL |
+| Description           | This is a workspace for ChiliPeppr's Hardware Fiddle. It is geared towards CNC machines using GRBL. |
 | chilipeppr.load() URL | http://raw.githubusercontent.com/raykholo/workspace-grbl/master/auto-generated-workspace.html |
 | Edit URL              | http://ide.c9.io/raykholo/workspace-grbl |
 | Github URL            | http://github.com/raykholo/workspace-grbl |
@@ -42,7 +42,7 @@ chilipeppr.load(
       ["inline:com-chilipeppr-workspace-grbl"], // the id you gave your workspace
       function(myWorkspaceGrbl) {
         // Callback that is passed reference to the newly loaded workspace
-        console.log("Workspace / Grbl just got loaded.", myWorkspaceGrbl);
+        console.log("Workspace / GRBL just got loaded.", myWorkspaceGrbl);
         myWorkspaceGrbl.init();
       }
     );
@@ -135,7 +135,7 @@ The table below shows, in order, the methods and properties inside the workspace
           </tr>
       </thead>
       <tbody>
-      <tr valign="top"><td>id</td><td>string</td><td>"com-chilipeppr-workspace-grbl"<br><br>The ID of the widget. You must define this and make it unique.</td></tr><tr valign="top"><td>name</td><td>string</td><td>"Workspace / Grbl"</td></tr><tr valign="top"><td>desc</td><td>string</td><td>"This is a workspace for ChiliPeppr's Hardware Fiddle. It is geared towards CNC machines using TinyG."</td></tr><tr valign="top"><td>url</td><td>string</td><td>"http://raw.githubusercontent.com/raykholo/workspace-grbl/master/auto-generated-workspace.html"</td></tr><tr valign="top"><td>fiddleurl</td><td>string</td><td>"http://ide.c9.io/raykholo/workspace-grbl"</td></tr><tr valign="top"><td>githuburl</td><td>string</td><td>"http://github.com/raykholo/workspace-grbl"</td></tr><tr valign="top"><td>testurl</td><td>string</td><td>"http://workspace-grbl-raykholo.c9users.io/workspace.html"</td></tr><tr valign="top"><td>foreignSubscribe</td><td>object</td><td>Please see docs above.</td></tr><tr valign="top"><td>foreignPublish</td><td>object</td><td>Please see docs above.</td></tr><tr valign="top"><td>widgetConsole</td><td>object</td><td>Contains reference to the Console widget object. Hang onto the reference
+      <tr valign="top"><td>id</td><td>string</td><td>"com-chilipeppr-workspace-grbl"<br><br>The ID of the widget. You must define this and make it unique.</td></tr><tr valign="top"><td>name</td><td>string</td><td>"Workspace / GRBL"</td></tr><tr valign="top"><td>desc</td><td>string</td><td>"This is a workspace for ChiliPeppr's Hardware Fiddle. It is geared towards CNC machines using GRBL."</td></tr><tr valign="top"><td>url</td><td>string</td><td>"http://raw.githubusercontent.com/raykholo/workspace-grbl/master/auto-generated-workspace.html"</td></tr><tr valign="top"><td>fiddleurl</td><td>string</td><td>"http://ide.c9.io/raykholo/workspace-grbl"</td></tr><tr valign="top"><td>githuburl</td><td>string</td><td>"http://github.com/raykholo/workspace-grbl"</td></tr><tr valign="top"><td>testurl</td><td>string</td><td>"http://workspace-grbl-raykholo.c9users.io/workspace.html"</td></tr><tr valign="top"><td>foreignSubscribe</td><td>object</td><td>Please see docs above.</td></tr><tr valign="top"><td>foreignPublish</td><td>object</td><td>Please see docs above.</td></tr><tr valign="top"><td>widgetConsole</td><td>object</td><td>Contains reference to the Console widget object. Hang onto the reference
 so we can resize it when the window resizes because we want it to manually
 resize to fill the height of the browser so it looks clean.</td></tr><tr valign="top"><td>widgetSpjs</td><td>object</td><td>Contains reference to the Serial Port JSON Server object.</td></tr><tr valign="top"><td>init</td><td>function</td><td>function () <br><br>The workspace's init method. It loads the all the widgets contained in the workspace
 and inits them.</td></tr><tr valign="top"><td>getBillboard</td><td>function</td><td>function () <br><br>Returns the billboard HTML, CSS, and Javascript for this Workspace. The billboard
