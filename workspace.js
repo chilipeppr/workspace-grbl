@@ -296,7 +296,7 @@ cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function(
                 });
 
 
-            /*
+            
             // Macro (original)
             // com-chilipeppr-ws-autolevel
             chilipeppr.load(
@@ -324,8 +324,9 @@ cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function(
 
                         });
                     });
-                });*/
-
+                });
+            
+            /*
             // Macro (imania)
             // com-chilipeppr-ws-autolevel
             chilipeppr.load(
@@ -353,7 +354,7 @@ cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function(
 
                         });
                     });
-                });
+                });*/
 
             // JScut
             // com-chilipeppr-ws-jscut
