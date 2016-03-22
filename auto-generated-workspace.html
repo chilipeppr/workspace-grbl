@@ -461,12 +461,41 @@ cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function(
                 });
 
 
-
-            // Macro
+            /*
+            // Macro (original)
             // com-chilipeppr-ws-autolevel
             chilipeppr.load(
                 "#com-chilipeppr-ws-macro",
                 "http://fiddle.jshell.net/chilipeppr/ZJ5vV/show/light/",
+                function() {
+                    require(["inline:com-chilipeppr-widget-macro"], function(macro) {
+                        macro.init();
+                        // setup toggle button
+                        var alBtn = $('#com-chilipeppr-ws-gcode-menu .macro-button');
+                        var alDiv = $('#com-chilipeppr-ws-macro');
+                        alBtn.click(function() {
+                            if (alDiv.hasClass("hidden")) {
+                                // unhide
+                                alDiv.removeClass("hidden");
+                                alBtn.addClass("active");
+                                //autolevel.onDisplay();
+                            }
+                            else {
+                                alDiv.addClass("hidden");
+                                alBtn.removeClass("active");
+                                //autolevel.onUndisplay();
+                            }
+                            $(window).trigger('resize');
+
+                        });
+                    });
+                });*/
+
+            // Macro (imania)
+            // com-chilipeppr-ws-autolevel
+            chilipeppr.load(
+                "#com-chilipeppr-ws-macro",
+                "http://jsfiddle.net/forstuvning/3gmfmnna/8/show/light/",
                 function() {
                     require(["inline:com-chilipeppr-widget-macro"], function(macro) {
                         macro.init();
@@ -893,6 +922,7 @@ cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function(
             // here and attaches 3 menu items. 1) the pubsub viewer dialog so users
             // can see what pubsubs this workspace may publish or subscribe to 2) It
             // lets them fork the workspace for their own use
+            /*
             chilipeppr.load(
                 "http://fiddle.jshell.net/chilipeppr/zMbL9/show/light/",
 
@@ -908,6 +938,7 @@ cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function(
                             "Workspace");
                     });
                 });
+                */
 
             // 3D Viewer
             // http://jsfiddle.net/chilipeppr/y3HRF
