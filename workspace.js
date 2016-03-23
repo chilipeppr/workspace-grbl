@@ -296,7 +296,7 @@ cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function(
                 });
 
 
-            
+
             // Macro (original)
             // com-chilipeppr-ws-autolevel
             chilipeppr.load(
@@ -325,7 +325,7 @@ cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function(
                         });
                     });
                 });
-            
+
             /*
             // Macro (imania)
             // com-chilipeppr-ws-autolevel
@@ -1107,6 +1107,7 @@ cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function(
                         });
                 });
 
+            /*
             //Axes Widget XYZA
             //This widget is locked at version 97 until upgrades can be tested with the override code.
             chilipeppr.load(
@@ -1302,8 +1303,35 @@ cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function(
                             });
                         });
                 });
+                */
 
 
+            chilipeppr.load(
+                "#com-chilipeppr-ws-macro",
+                "http://jsfiddle.net/forstuvning/3gmfmnna/8/show/light/",
+                function() {
+                    require(["inline:com-chilipeppr-widget-macro"], function(macro) {
+                        macro.init();
+                        // setup toggle button
+                        var alBtn = $('#com-chilipeppr-ws-gcode-menu .macro-button');
+                        var alDiv = $('#com-chilipeppr-ws-macro');
+                        alBtn.click(function() {
+                            if (alDiv.hasClass("hidden")) {
+                                // unhide
+                                alDiv.removeClass("hidden");
+                                alBtn.addClass("active");
+                                //autolevel.onDisplay();
+                            }
+                            else {
+                                alDiv.addClass("hidden");
+                                alBtn.removeClass("active");
+                                //autolevel.onUndisplay();
+                            }
+                            $(window).trigger('resize');
+
+                        });
+                    });
+                });
 
 
             // Serial Port Log Window
