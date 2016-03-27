@@ -241,7 +241,9 @@ cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function(
             this.loadWorkspaceMenu();
             // Add our billboard to the menu (has name, url, picture of workspace)
             this.addBillboardToWorkspaceMenu();
-
+            
+            chilipeppr.publish('/com-chilipeppr-elem-flashmsg/flashmsg', "Recent Maintenance", "Hello!  We recently updated the GRBL workspace.  Please let us know if you have any issues.  If auto-level still does not work, please continue to use chilipeppr.com/imania ", 15 * 1000);
+            
             // Setup an event to react to window resize. This helps since
             // some of our widgets have a manual resize to cleanly fill
             // the height of the browser window. You could turn this off and
